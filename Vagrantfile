@@ -40,7 +40,7 @@ Vagrant.configure("2") do |config|
        vb.customize ["modifyvm", :id, "--memory", 1024]
      end
      agent.vm.hostname = "cloudack-dnds1-2.hdp.net"
-     agent.vm.box = "centos"
+     agent.vm.box = "centos_i386"
      agent.vm.box_url = "http://developer.nrel.gov/downloads/vagrant-boxes/CentOS-6.4-i386-v20131103.box"
      agent.vm.network :private_network, ip: "192.168.33.13"
      agent.vm.synced_folder "vm", "/etc/share/vm"
